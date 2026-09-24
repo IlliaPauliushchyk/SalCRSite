@@ -29,34 +29,42 @@ export default {
     "tagline": "ผมเผยแพร่เกมปาร์ตี้ออฟไลน์ — สายลับฟุตบอลและการอนุมานทางสังคม",
     "appsHeading": "แอป",
     "footballSpyName": "Football Spy",
-    "footballSpyOneLiner": "เกมสายลับปาร์ตี้สไตล์ฟุตบอล",
+    "footballSpyOneLiner": "เกมสายลับปาร์ตี้สไตล์ฟุตบอล — พร้อม Football Dle",
     "sabotageName": "Sabotage",
     "sabotageOneLiner": "แจกบทบาท ทำภารกิจให้สำเร็จ หาผู้ก่อวินาศกรรม"
   },
   "spy": {
     "name": "Football Spy",
     "nameLocal": "สายลับฟุตบอล",
-    "description": "เกมสายลับปาร์ตี้ธีมฟุตบอล โหมดคลาสสิกและ Football Dle ออฟไลน์ ไม่ต้องมีบัญชี",
-    "featuresTitle": "ฟีเจอร์",
+    "description": "Football Spy เป็นเกมสายลับปาร์ตี้ธีมฟุตบอล ส่งต่อโทรศัพท์ แจกบทบาทลับ หาสายลับ ไม่ต้องมีบัญชี มี Football Dle — ท้าทายรายวันแบบ Wordle: ทายนักฟุตบอลจากแอตทริบิวต์ Wikidata (โหมดนี้ต้องใช้อินเทอร์เน็ต)",
+    "featuresTitle": "แอปทำอะไร",
     "features": [
-      "แจกบทบาท ตัวจับเวลา ภาษา และชุดกำหนดเอง",
-      "โหมดสายลับคลาสสิกและ Football Dle",
-      "กลุ่มเป้าหมาย: 13+ (ไม่ใช่ Designed for Families)"
+      "แจกบทบาท (สายลับ / พลเรือน) และตัวจับเวลา",
+      "ชุดนักเตะและโค้ชในตัว + ชุดกำหนดเอง (อยู่บนอุปกรณ์เท่านั้น)",
+      "หลายภาษา UI",
+      "Football Dle: สามระดับ (stars / known / deep) เปรียบเทียบแอตทริบิวต์ หนึ่งวัน/ช่วงต่อระดับ; รอบพิเศษด้วย rewarded (Android)",
+      "โปรโมทข้ามเกม Sabotage → Google Play",
+      "กลุ่มเป้าหมาย Play: ตาม listing (ไม่ใช่ Designed for Families / ไม่ต่ำกว่า 13)"
     ],
     "adsTitle": "โฆษณาและการหารายได้",
     "ads": [
-      "ไม่มี AdMob หรือเครือข่ายโฆษณาบุคคลที่สาม",
-      "«มีโฆษณา» ใน Play = โปรโมทข้ามของ Sabotage",
-      "ไม่ใช้ Advertising ID สำหรับโฆษณา",
-      "ไม่มีซื้อในแอป"
+      "โฆษณา: มีบน Android — Yandex Mobile Ads (ไม่ใช่ AdMob)",
+      "รูปแบบ Football Dle: feed (กติกา; ประวัติ), native (รายการพยายาม), rewarded (รอบเพิ่มหลังดู)",
+      "เพิ่มเติม: การ์ดโปรโม Sabotage (ไม่ใช่ Yandex)",
+      "IAP: ไม่มี",
+      "Advertising ID: SDK ของ Yandex ใช้สำหรับแสดง / วัดโฆษณา"
     ],
     "dataTitle": "ข้อมูลและความเป็นส่วนตัว",
     "data": [
-      "การตั้งค่าและชุดอยู่บนอุปกรณ์",
-      "Firebase Analytics (เหตุการณ์ไม่ระบุตัวตน ไม่ส่งข้อความกำหนดเอง)",
-      "เราไม่เก็บชื่อ อีเมล โทรศัพท์ รูป ตำแหน่งแม่นยำ รายชื่อติดต่อ หรือการชำระเงิน"
+      "ในเครื่อง: การตั้งค่า ชุดกำหนดเอง ภาษา ความคืบหน้า Football Dle แคช Wikidata",
+      "Firebase Firestore: อ่านรายชื่อในตัวเท่านั้น",
+      "Firebase Analytics: เหตุการณ์ไม่ระบุตัวตน (ไม่ส่งข้อความกำหนดเอง)",
+      "Wikidata: แอตทริบิวต์ผู้เล่นสาธารณะสำหรับ Football Dle",
+      "Yandex Ads (Android): Advertising ID และข้อมูลเทคนิค SDK",
+      "เราไม่เก็บชื่อ อีเมล โทรศัพท์ รูป GPS รายชื่อติดต่อ หรือการชำระเงินเอง",
+      "ต้องใช้อินเทอร์เน็ตสำหรับ Firestore, Analytics, Football Dle (Wikidata) และโฆษณา; สายลับพื้นฐานพร้อมชุดแคชอาจเล่นออฟไลน์ได้"
     ],
-    "supportText": "คำถาม ความเป็นส่วนตัว หรือปัญหาสโตร์:"
+    "supportText": "คำถาม ร้องเรียนโฆษณา ความเป็นส่วนตัว หรือปัญหาสโตร์:"
   },
   "sabotage": {
     "name": "Sabotage",
@@ -91,40 +99,44 @@ export default {
   },
   "privacy": {
     "title": "นโยบายความเป็นส่วนตัว",
-    "lastUpdated": "อัปเดตล่าสุด: 22 กันยายน 2026",
+    "lastUpdated": "อัปเดตล่าสุด: 24 กันยายน 2026",
     "introTitle": "1. ผู้ดำเนินการ",
     "intro": "นโยบายนี้อธิบายว่า SalCR («เรา») จัดการข้อมูลของ Football Spy (com.spyfootball) และ Sabotage (com.sabotage) อย่างไร ติดต่อ: {email}",
     "appsTitle": "2. แอปที่ครอบคลุม",
     "spyBlockTitle": "Football Spy",
-    "spySummary": "เกมออฟไลน์ Firebase Analytics อาจเก็บข้อมูลการใช้งานแบบไม่ระบุตัวตน ไม่มี AdMob «มีโฆษณา» = โปรโมทข้าม Sabotage ไม่ใช้ Advertising ID กับเครือข่ายโฆษณา นโยบายฉบับเต็ม:",
+    "spySummary": "เกมสายลับ + Football Dle (แอตทริบิวต์ Wikidata) Firebase Analytics และ Firestore (อ่าน) บน Android: Yandex Mobile Ads (feed / native / rewarded) และ Advertising ID โปรโมทข้าม Sabotage แยกจาก Yandex ไม่มี IAP นโยบายฉบับเต็ม:",
     "sabBlockTitle": "Sabotage",
     "sabSummary": "การอนุมานทางสังคมออฟไลน์ Firebase Analytics และ Yandex Mobile Ads Yandex อาจประมวลผล Advertising ID ไม่มี IAP นโยบายฉบับเต็ม:",
     "collectTitle": "3. สิ่งที่ประมวลผล",
     "collect": [
       "การตั้งค่าและเนื้อหากำหนดเองในเครื่อง",
       "เหตุการณ์ Firebase Analytics โดยไม่มีข้อความกำหนดเอง",
-      "เฉพาะ Sabotage: ข้อมูล Yandex Ads รวม Advertising ID"
+      "Football Spy: อ่าน Firestore รายชื่อในตัว; แอตทริบิวต์ Wikidata สาธารณะสำหรับ Football Dle",
+      "ทั้งสองแอป (Android): ข้อมูล Yandex Ads รวม Advertising ID"
     ],
     "notCollectTitle": "4. สิ่งที่เราไม่เก็บเอง",
     "notCollect": [
       "ชื่อ อีเมล โทรศัพท์",
       "รูป วิดีโอ เสียง",
-      "ตำแหน่งแม่นยำ รายชื่อติดต่อ การชำระเงิน บัญชีโซเชียล"
+      "GPS / ตำแหน่งแม่นยำ รายชื่อติดต่อ การชำระเงิน บัญชีโซเชียล"
     ],
     "purposeTitle": "5. วัตถุประสงค์",
     "purpose": [
       "ให้เกมทำงานและเก็บค่ากำหนด",
-      "ปรับปรุงแอปด้วยการวิเคราะห์แบบไม่ระบุตัวตน",
-      "แสดงและวัดโฆษณาใน Sabotage (Yandex)",
+      "โหลดเนื้อหา Football Dle (Wikidata) และรายชื่อ (Firestore)",
+      "ปรับปรุงด้วยการวิเคราะห์แบบไม่ระบุตัวตน",
+      "แสดงและวัดโฆษณาผ่าน Yandex (Android)",
+      "โปรโมทข้ามแอปของเรา (ไม่ใช่เครือข่ายโฆษณา)",
       "ปฏิบัติตามข้อกำหนดสโตร์และกฎหมาย"
     ],
     "thirdTitle": "6. บุคคลที่สาม",
     "third": [
-      "Google Firebase (Analytics) — ทั้งสองแอป",
-      "Yandex Mobile Ads — เฉพาะ Sabotage"
+      "Google Firebase (Analytics; Football Spy อ่าน Firestore ด้วย) — ทั้งสองแอป",
+      "Yandex Mobile Ads — Football Spy และ Sabotage (Android)",
+      "Wikimedia / Wikidata — เฉพาะ Football Spy (Football Dle)"
     ],
     "rightsTitle": "7. สิทธิ์ของคุณ",
-    "rights": "คำถามหรือคัดค้าน: {email} การถอนการติดตั้งลบข้อมูลในเครื่อง การวิเคราะห์รวมอาจลบตามอุปกรณ์ไม่ได้เสมอ SDK (Google, Yandex) มีนโยบายของตนเอง",
+    "rights": "คำถามหรือคัดค้าน: {email} การถอนการติดตั้งลบข้อมูลในเครื่อง การวิเคราะห์รวมอาจลบตามอุปกรณ์ไม่ได้เสมอ SDK (Google, Yandex) และ Wikidata มีนโยบายของตนเอง",
     "childrenTitle": "8. เด็ก",
     "children": "แอปไม่ใช่ Designed for Families และไม่ได้มุ่งเป้าเด็กอายุต่ำกว่า 13 ปี",
     "changesTitle": "9. การเปลี่ยนแปลง",

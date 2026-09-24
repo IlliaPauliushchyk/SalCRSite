@@ -29,34 +29,42 @@ export default {
     "tagline": "Pubblico giochi party offline — una spia calcistica e un gioco di deduzione sociale.",
     "appsHeading": "App",
     "footballSpyName": "Football Spy",
-    "footballSpyOneLiner": "Party spy game con un twist calcistico",
+    "footballSpyOneLiner": "Party spy game con un twist calcistico — più Football Dle",
     "sabotageName": "Sabotage",
     "sabotageOneLiner": "Assegna i ruoli, completa la missione, trova il sabotatore"
   },
   "spy": {
     "name": "Football Spy",
     "nameLocal": "Spia del Calcio",
-    "description": "Party game da spia a tema calcio. Modalità classica e Football Dle. Offline, senza account.",
-    "featuresTitle": "Funzioni",
+    "description": "Football Spy è un party game da spia a tema calcio. Passa il telefono, assegna ruoli segreti e trova le spie. Nessun account. Include anche Football Dle — sfida quotidiana stile Wordle: indovina il calciatore con attributi da Wikidata (serve internet per quella modalità).",
+    "featuresTitle": "Cosa fa l’app",
     "features": [
-      "Assegnazione ruoli, timer, lingue e set personalizzati",
-      "Modalità spia classica e Football Dle",
-      "Pubblico: 13+ (non Designed for Families)"
+      "Assegnazione ruoli (spie / civili) e timer",
+      "Set integrati di calciatori e allenatori + set personalizzati (solo sul dispositivo)",
+      "Molte lingue UI",
+      "Football Dle: tre livelli (stars / known / deep), confronto attributi, un giorno/periodo per livello; round extra opzionale via rewarded (Android)",
+      "Cross-promo del nostro gioco Sabotage → Google Play",
+      "Pubblico Play: come in scheda (non Designed for Families / non sotto i 13)"
     ],
     "adsTitle": "Annunci e monetizzazione",
     "ads": [
-      "Niente AdMob né reti di terze parti",
-      "«Contiene annunci» in Play = cross-promo di Sabotage",
-      "Advertising ID non usato per gli annunci",
-      "Niente acquisti in-app"
+      "Annunci: sì su Android — Yandex Mobile Ads (non AdMob)",
+      "Formati Football Dle: feed (regole; cronologia), native (lista tentativi), rewarded (round extra dopo la visione)",
+      "Anche: card promo di Sabotage (non Yandex)",
+      "IAP: no",
+      "Advertising ID: usato dallo SDK Yandex per mostrare / misurare gli annunci"
     ],
     "dataTitle": "Dati e privacy",
     "data": [
-      "Impostazioni e set restano sul dispositivo",
-      "Firebase Analytics (eventi anonimi; testo personalizzato non inviato)",
-      "Non raccogliamo nome, email, telefono, foto, posizione precisa, contatti o pagamenti"
+      "Locale: impostazioni, set personalizzati, lingua, progresso Football Dle, cache Wikidata",
+      "Firebase Firestore: lettura delle liste di nomi integrate",
+      "Firebase Analytics: eventi anonimi (testo personalizzato non inviato)",
+      "Wikidata: attributi pubblici dei giocatori per Football Dle",
+      "Yandex Ads (Android): Advertising ID e dati tecnici SDK",
+      "Non raccogliamo noi nome, email, telefono, foto, GPS, contatti o pagamenti",
+      "Internet necessario per Firestore, Analytics, Football Dle (Wikidata) e annunci; la spia base con set in cache può funzionare offline"
     ],
-    "supportText": "Domande, privacy o problemi dello store:"
+    "supportText": "Domande, reclami annunci, privacy o problemi dello store:"
   },
   "sabotage": {
     "name": "Sabotage",
@@ -91,40 +99,44 @@ export default {
   },
   "privacy": {
     "title": "Informativa sulla privacy",
-    "lastUpdated": "Ultimo aggiornamento: 22 settembre 2026",
+    "lastUpdated": "Ultimo aggiornamento: 24 settembre 2026",
     "introTitle": "1. Operatore",
     "intro": "Questa informativa descrive come SalCR («noi») tratta le informazioni per Football Spy (com.spyfootball) e Sabotage (com.sabotage). Contatto: {email}.",
     "appsTitle": "2. App coperte",
     "spyBlockTitle": "Football Spy",
-    "spySummary": "Gioco offline. Firebase Analytics può raccogliere dati di utilizzo anonimi. Niente AdMob. «Contiene annunci» = cross-promo di Sabotage. Advertising ID non usato per reti pubblicitarie. Informativa completa:",
+    "spySummary": "Party spy + Football Dle (attributi Wikidata). Firebase Analytics e Firestore (lettura). Su Android: Yandex Mobile Ads (feed / native / rewarded) e Advertising ID. Cross-promo di Sabotage separata da Yandex. Niente IAP. Informativa completa:",
     "sabBlockTitle": "Sabotage",
     "sabSummary": "Deduzione sociale offline. Firebase Analytics e Yandex Mobile Ads. Yandex può trattare Advertising ID. Niente IAP. Informativa completa:",
     "collectTitle": "3. Cosa viene elaborato",
     "collect": [
       "Impostazioni e contenuto personalizzato locali",
       "Eventi Firebase Analytics senza testo personalizzato",
-      "Solo Sabotage: dati Yandex Ads incluso Advertising ID"
+      "Football Spy: lettura Firestore delle liste integrate; attributi pubblici Wikidata per Football Dle",
+      "Entrambe le app (Android): dati Yandex Ads incluso Advertising ID"
     ],
     "notCollectTitle": "4. Cosa non raccogliamo noi",
     "notCollect": [
       "Nome, email, telefono",
       "Foto, video, audio",
-      "Posizione precisa, contatti, pagamenti, account social"
+      "GPS / posizione precisa, contatti, pagamenti, account social"
     ],
     "purposeTitle": "5. Finalità",
     "purpose": [
       "Far funzionare i giochi e salvare preferenze",
+      "Caricare contenuti Football Dle (Wikidata) e liste (Firestore)",
       "Migliorare le app con analytics anonime",
-      "Mostrare e misurare annunci in Sabotage (Yandex)",
+      "Mostrare e misurare annunci via Yandex (Android)",
+      "Promuovere le nostre app (non una rete pubblicitaria)",
       "Rispettare requisiti di store e legge"
     ],
     "thirdTitle": "6. Terze parti",
     "third": [
-      "Google Firebase (Analytics) — entrambe le app",
-      "Yandex Mobile Ads — solo Sabotage"
+      "Google Firebase (Analytics; Football Spy anche Firestore in lettura) — entrambe le app",
+      "Yandex Mobile Ads — Football Spy e Sabotage (Android)",
+      "Wikimedia / Wikidata — solo Football Spy (Football Dle)"
     ],
     "rightsTitle": "7. I tuoi diritti",
-    "rights": "Domande o opposizione: {email}. Disinstallare rimuove i dati locali; analytics aggregate non sempre cancellabili per dispositivo. Gli SDK (Google, Yandex) hanno le proprie policy.",
+    "rights": "Domande o opposizione: {email}. Disinstallare rimuove i dati locali; analytics aggregate non sempre cancellabili per dispositivo. Gli SDK (Google, Yandex) e Wikidata hanno le proprie policy.",
     "childrenTitle": "8. Minori",
     "children": "Le app non sono Designed for Families e non sono rivolte a minori di 13 anni.",
     "changesTitle": "9. Modifiche",

@@ -29,34 +29,42 @@ export default {
     "tagline": "আমি অফলাইন পার্টি গেম প্রকাশ করি — ফুটবল স্পাই এবং সামাজিক অনুমান।",
     "appsHeading": "অ্যাপ",
     "footballSpyName": "Football Spy",
-    "footballSpyOneLiner": "ফুটবল টুইস্টসহ পার্টি স্পাই গেম",
+    "footballSpyOneLiner": "ফুটবল টুইস্টসহ পার্টি স্পাই গেম — প্লাস Football Dle",
     "sabotageName": "Sabotage",
     "sabotageOneLiner": "ভূমিকা ভাগ করুন, মিশন সম্পন্ন করুন, নাশকতাকারী খুঁজুন"
   },
   "spy": {
     "name": "Football Spy",
     "nameLocal": "ফুটবল স্পাই",
-    "description": "ফুটবল থিমের পার্টি স্পাই গেম। ক্লাসিক স্পাই এবং Football Dle। অফলাইন, অ্যাকাউন্ট ছাড়া।",
-    "featuresTitle": "বৈশিষ্ট্য",
+    "description": "Football Spy ফুটবল থিমের পার্টি স্পাই গেম। ফোন পাস করুন, গোপন ভূমিকা ভাগ করুন, স্পাই খুঁজুন। অ্যাকাউন্ট লাগে না। Football Dleও আছে — প্রতিদিনের Wordle-স্টাইল চ্যালেঞ্জ: Wikidata বৈশিষ্ট্য দিয়ে খেলোয়াড় অনুমান (সেই মোডে ইন্টারনেট দরকার)।",
+    "featuresTitle": "অ্যাপ কী করে",
     "features": [
-      "ভূমিকা বিতরণ, টাইমার, ভাষা এবং কাস্টম সেট",
-      "ক্লাসিক স্পাই মোড এবং Football Dle",
-      "দর্শক: 13+ (Designed for Families নয়)"
+      "ভূমিকা বিতরণ (স্পাই / নাগরিক) ও টাইমার",
+      "অন্তর্নির্মিত খেলোয়াড় ও কোচ সেট + কাস্টম সেট (শুধু ডিভাইসে)",
+      "অনেক UI ভাষা",
+      "Football Dle: তিন স্তর (stars / known / deep), বৈশিষ্ট্য তুলনা, স্তরপ্রতি এক দিন/সময়; rewarded দিয়ে অতিরিক্ত রাউন্ড (Android)",
+      "আমাদের অন্য গেম Sabotage ক্রস-প্রোমো → Google Play",
+      "Play দর্শক: লিস্টিং অনুযায়ী (Designed for Families নয় / ১৩-এর নিচে নয়)"
     ],
     "adsTitle": "বিজ্ঞাপন ও মুনাফা",
     "ads": [
-      "AdMob বা তৃতীয় পক্ষের নেটওয়ার্ক নেই",
-      "Play-এ «বিজ্ঞাপন আছে» = Sabotage ক্রস-প্রোমো",
-      "Advertising ID বিজ্ঞাপনের জন্য ব্যবহৃত হয় না",
-      "ইন-অ্যাপ কেনাকাটা নেই"
+      "বিজ্ঞাপন: Android-এ হ্যাঁ — Yandex Mobile Ads (AdMob নয়)",
+      "Football Dle ফরম্যাট: feed (নিয়ম; ইতিহাস), native (চেষ্টার তালিকা), rewarded (দেখার পর অতিরিক্ত রাউন্ড)",
+      "অতিরিক্ত: Sabotage প্রোমো কার্ড (Yandex নয়)",
+      "IAP: না",
+      "Advertising ID: দেখানো / মাপার জন্য Yandex SDK ব্যবহার করে"
     ],
     "dataTitle": "ডেটা ও গোপনীয়তা",
     "data": [
-      "সেটিংস ও সেট ডিভাইসে থাকে",
-      "Firebase Analytics (বেনামি ইভেন্ট; কাস্টম টেক্সট পাঠানো হয় না)",
-      "আমরা নাম, ইমেইল, ফোন, ছবি, সঠিক অবস্থান, যোগাযোগ বা পেমেন্ট সংগ্রহ করি না"
+      "লোকাল: সেটিংস, কাস্টম সেট, ভাষা, Football Dle অগ্রগতি, Wikidata ক্যাশ",
+      "Firebase Firestore: অন্তর্নির্মিত নাম তালিকা শুধু পড়া",
+      "Firebase Analytics: বেনামি ইভেন্ট (কাস্টম টেক্সট পাঠানো হয় না)",
+      "Wikidata: Football Dle-এর জন্য পাবলিক খেলোয়াড় বৈশিষ্ট্য",
+      "Yandex Ads (Android): Advertising ID ও প্রযুক্তিগত SDK ডেটা",
+      "আমরা নিজেরা নাম, ইমেইল, ফোন, ছবি, GPS, যোগাযোগ বা পেমেন্ট সংগ্রহ করি না",
+      "Firestore, Analytics, Football Dle (Wikidata) ও বিজ্ঞাপনের জন্য ইন্টারনেট দরকার; ক্যাশ করা সেটসহ বেসিক স্পাই অফলাইন চলতে পারে"
     ],
-    "supportText": "প্রশ্ন, গোপনীয়তা বা স্টোর সমস্যা:"
+    "supportText": "প্রশ্ন, বিজ্ঞাপন অভিযোগ, গোপনীয়তা বা স্টোর সমস্যা:"
   },
   "sabotage": {
     "name": "Sabotage",
@@ -91,40 +99,44 @@ export default {
   },
   "privacy": {
     "title": "গোপনীয়তা নীতি",
-    "lastUpdated": "শেষ আপডেট: ২২ সেপ্টেম্বর ২০২৬",
+    "lastUpdated": "শেষ আপডেট: ২৪ সেপ্টেম্বর ২০২৬",
     "introTitle": "1. পরিচালক",
     "intro": "এই নীতি বর্ণনা করে SalCR («আমরা») কীভাবে Football Spy (com.spyfootball) ও Sabotage (com.sabotage) তথ্য প্রক্রিয়া করে। যোগাযোগ: {email}।",
     "appsTitle": "2. অন্তর্ভুক্ত অ্যাপ",
     "spyBlockTitle": "Football Spy",
-    "spySummary": "অফলাইন পার্টি গেম। Firebase Analytics বেনামি ব্যবহার ডেটা সংগ্রহ করতে পারে। AdMob নেই। «বিজ্ঞাপন আছে» = Sabotage ক্রস-প্রোমো। Advertising ID বিজ্ঞাপন নেটওয়ার্কের জন্য নয়। সম্পূর্ণ নীতি:",
+    "spySummary": "পার্টি স্পাই + Football Dle (Wikidata বৈশিষ্ট্য)। Firebase Analytics ও Firestore (পড়া)। Android-এ: Yandex Mobile Ads (feed / native / rewarded) ও Advertising ID। Sabotage ক্রস-প্রোমো Yandex থেকে আলাদা। IAP নেই। সম্পূর্ণ নীতি:",
     "sabBlockTitle": "Sabotage",
     "sabSummary": "অফলাইন সামাজিক অনুমান। Firebase Analytics ও Yandex Mobile Ads। Yandex Advertising ID প্রক্রিয়া করতে পারে। IAP নেই। সম্পূর্ণ নীতি:",
     "collectTitle": "3. কী প্রক্রিয়া হয়",
     "collect": [
       "লোকাল সেটিংস ও কাস্টম কনটেন্ট",
       "কাস্টম টেক্সট ছাড়া Firebase Analytics ইভেন্ট",
-      "শুধু Sabotage: Advertising IDসহ Yandex Ads ডেটা"
+      "Football Spy: Firestore-এ অন্তর্নির্মিত তালিকা পড়া; Football Dle-এর জন্য Wikidata পাবলিক বৈশিষ্ট্য",
+      "উভয় অ্যাপ (Android): Advertising IDসহ Yandex Ads ডেটা"
     ],
     "notCollectTitle": "4. আমরা নিজেরা যা সংগ্রহ করি না",
     "notCollect": [
       "নাম, ইমেইল, ফোন",
       "ছবি, ভিডিও, অডিও",
-      "সঠিক অবস্থান, যোগাযোগ, পেমেন্ট, সোশ্যাল অ্যাকাউন্ট"
+      "GPS / সঠিক অবস্থান, যোগাযোগ, পেমেন্ট, সোশ্যাল অ্যাকাউন্ট"
     ],
     "purposeTitle": "5. উদ্দেশ্য",
     "purpose": [
       "গেম চালানো ও পছন্দ সংরক্ষণ",
+      "Football Dle কনটেন্ট (Wikidata) ও তালিকা (Firestore) লোড",
       "বেনামি অ্যানালিটিক্স দিয়ে উন্নতি",
-      "Sabotage-এ বিজ্ঞাপন দেখানো ও পরিমাপ (Yandex)",
+      "Yandex দিয়ে বিজ্ঞাপন দেখানো ও পরিমাপ (Android)",
+      "নিজস্ব অ্যাপের ক্রস-প্রোমো (বিজ্ঞাপন নেটওয়ার্ক নয়)",
       "স্টোর ও আইনি প্রয়োজন মেনে চলা"
     ],
     "thirdTitle": "6. তৃতীয় পক্ষ",
     "third": [
-      "Google Firebase (Analytics) — উভয় অ্যাপ",
-      "Yandex Mobile Ads — শুধু Sabotage"
+      "Google Firebase (Analytics; Football Spy-এ Firestore পড়াও) — উভয় অ্যাপ",
+      "Yandex Mobile Ads — Football Spy ও Sabotage (Android)",
+      "Wikimedia / Wikidata — শুধু Football Spy (Football Dle)"
     ],
     "rightsTitle": "7. আপনার অধিকার",
-    "rights": "প্রশ্ন বা আপত্তি: {email}। আনইনস্টল লোকাল ডেটা মুছে। সমষ্টিগত অ্যানালিটিক্স সবসময় ডিভাইস অনুযায়ী মুছা যায় না। SDK (Google, Yandex)-এর নিজস্ব নীতি আছে।",
+    "rights": "প্রশ্ন বা আপত্তি: {email}। আনইনস্টল লোকাল ডেটা মুছে। সমষ্টিগত অ্যানালিটিক্স সবসময় ডিভাইস অনুযায়ী মুছা যায় না। SDK (Google, Yandex) ও Wikidata-এর নিজস্ব নীতি আছে।",
     "childrenTitle": "8. শিশু",
     "children": "অ্যাপগুলো Designed for Families নয় এবং ১৩ বছরের কম বয়সীদের জন্য নয়।",
     "changesTitle": "9. পরিবর্তন",

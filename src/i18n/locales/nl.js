@@ -29,34 +29,42 @@ export default {
     "tagline": "Ik publiceer offline party games — een voetbalspion en sociale deductie.",
     "appsHeading": "Apps",
     "footballSpyName": "Football Spy",
-    "footballSpyOneLiner": "Party spion-spel met een voetbaltwist",
+    "footballSpyOneLiner": "Party spion-spel met een voetbaltwist — plus Football Dle",
     "sabotageName": "Sabotage",
     "sabotageOneLiner": "Deel rollen uit, voltooi de missie, vind de saboteur"
   },
   "spy": {
     "name": "Football Spy",
     "nameLocal": "Voetbalspion",
-    "description": "Party spion-spel met voetbalthema. Klassieke spion en Football Dle. Offline, geen account.",
-    "featuresTitle": "Functies",
+    "description": "Football Spy is een party spion-spel met voetbalthema. Geef de telefoon door, deel geheime rollen uit en vind de spionnen. Geen account. Inclusief Football Dle — dagelijkse Wordle-achtige uitdaging: raad de voetballer via Wikidata-attributen (internet nodig voor die modus).",
+    "featuresTitle": "Wat de app doet",
     "features": [
-      "Rollen, timer, talen en eigen sets",
-      "Klassieke spion-modus en Football Dle",
-      "Doelgroep: 13+ (niet Designed for Families)"
+      "Rollen (spionnen / burgers) en timer",
+      "Ingebouwde voetballer- en coachsets plus eigen sets (alleen op het apparaat)",
+      "Veel UI-talen",
+      "Football Dle: drie niveaus (stars / known / deep), attribuutvergelijking, één dag/periode per niveau; optionele extra ronde via rewarded (Android)",
+      "Cross-promo van ons spel Sabotage → Google Play",
+      "Play-doelgroep: zoals in de listing (niet Designed for Families / niet onder 13)"
     ],
     "adsTitle": "Advertenties & monetisatie",
     "ads": [
-      "Geen AdMob of externe ad-netwerken",
-      "«Bevat advertenties» in Play = cross-promo van Sabotage",
-      "Advertising ID niet gebruikt voor ads",
-      "Geen in-app aankopen"
+      "Ads: ja op Android — Yandex Mobile Ads (niet AdMob)",
+      "Football Dle-formaten: feed (regels; geschiedenis), native (pogingenlijst), rewarded (extra ronde na kijken)",
+      "Ook: promokaart voor Sabotage (niet Yandex)",
+      "IAP: nee",
+      "Advertising ID: gebruikt door Yandex SDK voor tonen / meten van ads"
     ],
     "dataTitle": "Gegevens & privacy",
     "data": [
-      "Instellingen en sets blijven op het apparaat",
-      "Firebase Analytics (anonieme events; eigen tekst niet verzonden)",
-      "We verzamelen geen naam, e-mail, telefoon, foto’s, precieze locatie, contacten of betalingen"
+      "Lokaal: instellingen, eigen sets, taal, Football Dle-voortgang, Wikidata-cache",
+      "Firebase Firestore: alleen lezen van ingebouwde namenlijsten",
+      "Firebase Analytics: anonieme events (eigen tekst niet verzonden)",
+      "Wikidata: openbare spelerattributen voor Football Dle",
+      "Yandex Ads (Android): Advertising ID en technische SDK-data",
+      "Wij verzamelen zelf geen naam, e-mail, telefoon, foto’s, GPS, contacten of betalingen",
+      "Internet nodig voor Firestore, Analytics, Football Dle (Wikidata) en ads; basis-spion met gecachte sets kan offline"
     ],
-    "supportText": "Vragen, privacy of store-problemen:"
+    "supportText": "Vragen, ad-klachten, privacy of store-problemen:"
   },
   "sabotage": {
     "name": "Sabotage",
@@ -91,40 +99,44 @@ export default {
   },
   "privacy": {
     "title": "Privacybeleid",
-    "lastUpdated": "Laatst bijgewerkt: 22 september 2026",
+    "lastUpdated": "Laatst bijgewerkt: 24 september 2026",
     "introTitle": "1. Exploitant",
     "intro": "Dit beleid beschrijft hoe SalCR («wij») informatie verwerkt voor Football Spy (com.spyfootball) en Sabotage (com.sabotage). Contact: {email}.",
     "appsTitle": "2. Apps",
     "spyBlockTitle": "Football Spy",
-    "spySummary": "Offline party game. Firebase Analytics kan anonieme gebruiksdata verzamelen. Geen AdMob. «Bevat advertenties» = cross-promo van Sabotage. Advertising ID niet voor ad-netwerken. Volledig beleid:",
+    "spySummary": "Spion-party + Football Dle (Wikidata-attributen). Firebase Analytics en Firestore (lezen). Op Android: Yandex Mobile Ads (feed / native / rewarded) en Advertising ID. Cross-promo van Sabotage los van Yandex. Geen IAP. Volledig beleid:",
     "sabBlockTitle": "Sabotage",
     "sabSummary": "Offline sociale deductie. Firebase Analytics en Yandex Mobile Ads. Yandex kan Advertising ID verwerken. Geen IAP. Volledig beleid:",
     "collectTitle": "3. Wat wordt verwerkt",
     "collect": [
       "Lokale game-instellingen en eigen content",
       "Firebase Analytics-events zonder eigen tekst",
-      "Alleen Sabotage: Yandex Ads-data inclusief Advertising ID"
+      "Football Spy: Firestore-lezen van ingebouwde lijsten; openbare Wikidata-attributen voor Football Dle",
+      "Beide apps (Android): Yandex Ads-data inclusief Advertising ID"
     ],
     "notCollectTitle": "4. Wat we zelf niet verzamelen",
     "notCollect": [
       "Naam, e-mail, telefoon",
       "Foto’s, video, audio",
-      "Precieze locatie, contacten, betalingen, social accounts"
+      "GPS / precieze locatie, contacten, betalingen, social accounts"
     ],
     "purposeTitle": "5. Doelen",
     "purpose": [
       "Games laten werken en voorkeuren bewaren",
+      "Football Dle-content (Wikidata) en lijsten (Firestore) laden",
       "Apps verbeteren via anonieme analytics",
-      "Ads tonen en meten in Sabotage (Yandex)",
+      "Ads tonen en meten via Yandex (Android)",
+      "Onze eigen apps promoten (geen ad-netwerk)",
       "Voldoen aan store- en wettelijke eisen"
     ],
     "thirdTitle": "6. Derden",
     "third": [
-      "Google Firebase (Analytics) — beide apps",
-      "Yandex Mobile Ads — alleen Sabotage"
+      "Google Firebase (Analytics; Football Spy ook Firestore lezen) — beide apps",
+      "Yandex Mobile Ads — Football Spy en Sabotage (Android)",
+      "Wikimedia / Wikidata — alleen Football Spy (Football Dle)"
     ],
     "rightsTitle": "7. Uw rechten",
-    "rights": "Vragen of bezwaar: {email}. Deïnstalleren verwijdert lokale data; geaggregeerde analytics zijn niet altijd per apparaat te wissen. SDK’s (Google, Yandex) hebben eigen beleid.",
+    "rights": "Vragen of bezwaar: {email}. Deïnstalleren verwijdert lokale data; geaggregeerde analytics zijn niet altijd per apparaat te wissen. SDK’s (Google, Yandex) en Wikidata hebben eigen beleid.",
     "childrenTitle": "8. Kinderen",
     "children": "Apps zijn niet Designed for Families en niet gericht op kinderen onder 13.",
     "changesTitle": "9. Wijzigingen",

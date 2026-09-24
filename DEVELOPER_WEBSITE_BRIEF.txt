@@ -39,7 +39,7 @@
 Карточки (готовые тексты):
 
   Football Spy / Футбольный шпион
-  → «Party spy game with a football twist»
+  → «Party spy game with a football twist — plus Football Dle»
   → Play: https://play.google.com/store/apps/details?id=com.spyfootball
   → /apps/football-spy
 
@@ -61,27 +61,82 @@ URL: /apps/football-spy  и  /apps/sabotage
 2A. FOOTBALL SPY (com.spyfootball)
 -------------------------------------------------------------------------------
 A) Идентификация
-   • Name: Football Spy / Футбольный шпион
-   • Package: com.spyfootball
-   • Platform: Android (Google Play)
+   • Name (EN): Football Spy
+   • Name (RU): Футбольный шпион
+   • Package / App ID: com.spyfootball
+   • Platform: Android (Google Play); iOS-сборка без Yandex Ads
    • Install: https://play.google.com/store/apps/details?id=com.spyfootball
 
-B) Описание
-   - party-игра «шпион» для компании в футбольной тематике;
-   - режимы вроде классического шпиона и Football Dle (угадай футболиста
-     по атрибутам) — если есть в сторе, упомянуть и здесь;
-   - офлайн / локальная игра; без аккаунта.
+B) Короткое описание (2–4 предложения) — EN + RU
+   EN:
+   Football Spy is a football-themed party spy game. Pass the phone, deal
+   secret roles, and find the spies. No account required. Also includes
+   Football Dle — a daily Wordle-style challenge: guess the footballer by
+   comparing attributes loaded from Wikidata (internet needed for that mode).
+   RU:
+   «Футбольный шпион» — party-игра «шпион» в футбольной тематике. Передаёте
+   телефон, раздаются роли — ищите шпионов. Аккаунт не нужен. Есть режим
+   Football Dle: ежедневная угадайка футболиста по атрибутам (данные из
+   Wikidata; для этого режима нужен интернет).
 
-C) Фичи (буллеты)
-   • раздача ролей, таймер, наборы / языки / кастомные наборы — по факту стора
-   • аудитория: как в Play (не Families / не до 13)
+C) Что делает приложение (буллеты)
+   • Раздача ролей (шпионы / мирные), таймер раунда
+   • Встроенные наборы футболистов и тренеров + кастомные наборы
+     (кастомы только на устройстве)
+   • Много языков интерфейса
+   • Режим Football Dle: три тира сложности (stars / known / deep),
+     сравнение атрибутов (страна, позиция, клуб, рост, возраст…),
+     один «день» / период на тир; опционально ещё один раунд за
+     просмотр rewarded-рекламы (Android)
+   • Кросс-промо другой нашей игры («Саботаж») → Google Play
+   • Целевая аудитория в Play: как в листинге (не Designed for Families /
+     не до 13 — по факту стора)
 
-D) Реклама и монетизация — по факту билда SpyFootball
-   (вставить: есть / нет AdMob или только кросс-промо)
+D) Реклама и монетизация (писать честно, как в текущем билде)
+   • Реклама: ДА на Android — Yandex Mobile Ads / РСЯ (не AdMob)
+   • Форматы в Football Dle:
+     - feed (правила; история попыток)
+     - native (в списке попыток)
+     - rewarded (доп. раунд на тир за период после просмотра)
+   • Дополнительно: карточка-промо своей игры «Саботаж» (не РСЯ)
+   • Покупки (IAP): НЕТ
+   • Advertising ID: используется SDK Yandex для показа/учёта рекламы
+     (в Play Console: Ads = yes; Advertising ID = yes — сверить с
+     итоговым AAB / merged manifest перед релизом)
+   • Kill-switch в коде: ADS_FEATURE_ENABLED / adsFeatureEnabled —
+     на сайте описывать факт опубликованного трека, не debug-флаг
 
-E) Данные
-   • ссылка на /privacy
-   • коротко: Firebase Analytics и т.п. — как в политике SpyFootball
+E) Данные и конфиденциальность
+   • Ссылка на Privacy Policy — /privacy или /privacy#football-spy
+   • Политика должна упоминать: Firebase, Wikidata (Football Dle),
+     Yandex Ads (Android), кросс-промо Саботажа
+     (см. PRIVACY_POLICY_RECOMMENDATIONS.md в репо SpyFootball)
+   • Собирается / обрабатывается:
+     - локально: настройки, кастомные наборы, язык, прогресс Football Dle,
+       кэш ответов Wikidata
+     - Firebase Firestore: чтение встроенных списков имён (не запись
+       пользовательских наборов)
+     - Firebase Analytics: анонимные события использования (без текста
+       кастомных наборов)
+     - Wikidata: запросы публичных атрибутов игроков для Football Dle
+     - Yandex Ads (Android): Advertising ID + техданные SDK
+   • НЕ собираем сами: имя, email, телефон, фото, GPS-геолокацию,
+     контакты, платежи
+   • Аккаунт не требуется
+   • Интернет нужен для: контента Firestore, Analytics, Football Dle
+     (Wikidata), рекламы. Базовый «шпион» с уже закэшированными
+     наборами может работать офлайн.
+
+F) Поддержка
+   • Email (тот же, что в Play Console) — жалобы, вопросы по рекламе, данные
+   • mailto: достаточно
+
+G) Скриншоты
+   • 2–4 из Play listing Football Spy (шпион + Football Dle при наличии)
+
+H) Юридическое
+   • «© YEAR Developer Name»
+   • Privacy | (Terms по желанию)
 
 -------------------------------------------------------------------------------
 2B. SABOTAGE / САБОТАЖ (com.sabotage)  ← заполнить на сайте этими фактами
@@ -123,7 +178,7 @@ D) Реклама и монетизация (писать честно, как �
 
 E) Данные и конфиденциальность
    • Ссылка на Privacy Policy (обязательно) — общий /privacy или
-     /privacy#sabotage; текст должен упоминать Yandex Ads (см. GOOGLE_PLAY_PRIVACY.md)
+     /privacy#sabotage; текст должен упоминать Yandex Ads
    • Собирается / обрабатывается:
      - локально: настройки, кастомные миссии, язык, флаги mute рекламы
      - Firebase Analytics: события использования (без текста кастомных миссий)
@@ -151,18 +206,32 @@ H) Юридическое
 • Какие данные собираются
 • Зачем
 • С кем делятся:
-  - Google Firebase (Analytics) — оба приложения (по факту)
-  - Yandex Mobile Ads — для Sabotage (реклама / Advertising ID)
-  - для SpyFootball — указать сети по факту того билда
-• Реклама и рекламные идентификаторы (для Sabotage — обязательно Yandex)
+  - Google Firebase (Analytics; у SpyFootball ещё Firestore на чтение)
+  - Yandex Mobile Ads — Sabotage и SpyFootball (Android, реклама /
+    Advertising ID)
+  - Wikimedia / Wikidata — только SpyFootball (Football Dle: публичные
+    атрибуты игроков)
+• Реклама и рекламные идентификаторы — Yandex для обеих игр (Android)
+• Интернет: зачем нужен (контент, аналитика, Football Dle, реклама)
+• Кросс-промо своих приложений (карточка «Саботаж» в SpyFootball) —
+  отдельно от РСЯ
 • Права пользователя / как связаться
 • Дата обновления политики
 
-Черновик под Sabotage: файл GOOGLE_PLAY_PRIVACY.md в репозитории Sabotage.
+Черновики / шпаргалки:
+  - SpyFootball: PRIVACY_POLICY_RECOMMENDATIONS.md
+  - Sabotage: GOOGLE_PLAY_PRIVACY.md (в репо Sabotage)
+
+Не копировать старые формулировки SpyFootball вроде
+«рекламных сетей нет» / «Advertising ID не используем» — они устарели.
 
 URL вида: https://yourdomain.com/privacy
 Именно этот URL вставлять в Play Console → App content → Privacy policy
 и в карточку разработчика.
+
+Опционально якоря:
+  /privacy#football-spy
+  /privacy#sabotage
 
 -------------------------------------------------------------------------------
 4. CONTACT
@@ -259,9 +328,11 @@ Elevation: level1 #201D22 | level2 #242026 | level3 #28242A
 [ ] Указан контактный email
 [ ] На странице Sabotage честно: Yandex Ads (banner / native /
     interstitial / rewarded), Advertising ID, без IAP
-[ ] На странице SpyFootball — факт по рекламе того билда
-[ ] Политика упоминает Yandex для Sabotage (не копировать
-    «Advertising ID не собираем» из старого SpyFootball)
+[ ] На странице Football Spy честно: Yandex Ads (feed / native /
+    rewarded в Football Dle), кросс-промо Саботажа, без IAP,
+    интернет для Wikidata + рекламы
+[ ] Политика упоминает Yandex для обеих игр (Android) и Wikidata
+    для SpyFootball; не писать «Advertising ID не собираем»
 [ ] Сайт не «Under construction» и не пустая страница
 [ ] Иконки и названия совпадают со стором
 [ ] Нет чужих брендов / чужих скринов
@@ -287,12 +358,14 @@ Play listings:
 ЧТО НАПИСАТЬ ДИЗАЙНЕРУ / ВЕРСТАЛЬЩИКУ ОДНОЙ ФРАЗОЙ
 -------------------------------------------------------------------------------
 «Простой тёмный хаб разработчика + страница Football Spy (teal #009688 на
-#121C1B) + страница Sabotage (латунь #C6A26C на #0E0D10) + privacy + contact.
-Главное — ссылки на Play (com.spyfootball / com.sabotage), политика с Yandex
-Ads для Саботажа и честный блок про рекламу, не маркетинг.»
+#121C1B; упомянуть Football Dle + Yandex Ads) + страница Sabotage (латунь
+#C6A26C на #0E0D10) + privacy + contact. Главное — ссылки на Play
+(com.spyfootball / com.sabotage), политика с Yandex Ads для обеих игр и
+Wikidata для SpyFootball, честный блок про рекламу, не маркетинг.»
 
 ===============================================================================
 Конец брифа.
 Осталось подставить: имя разработчика, email, реальный домен.
-Факты по Sabotage (package, ads, палитра, тексты) уже заполнены выше.
+Факты по Sabotage и SpyFootball (package, ads, Football Dle, палитры,
+тексты) заполнены выше.
 ===============================================================================

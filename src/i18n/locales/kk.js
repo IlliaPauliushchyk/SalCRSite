@@ -29,34 +29,42 @@ export default {
     "tagline": "Офлайн партиялық ойындар шығарамын — футбол тыңшысы және әлеуметтік дедукция.",
     "appsHeading": "Қолданбалар",
     "footballSpyName": "Football Spy",
-    "footballSpyOneLiner": "Футболдық реңкті партиялық тыңшы ойыны",
+    "footballSpyOneLiner": "Футболдық реңкті партиялық тыңшы ойыны — plus Football Dle",
     "sabotageName": "Sabotage",
     "sabotageOneLiner": "Рөлдерді үлестіріңіз, миссияны орындаңыз, диверсантты табыңыз"
   },
   "spy": {
     "name": "Football Spy",
     "nameLocal": "Футбол тыңшысы",
-    "description": "Футбол тақырыбындағы партиялық тыңшы ойыны. Классикалық тыңшы және Football Dle. Офлайн, тіркелгісіз.",
-    "featuresTitle": "Мүмкіндіктер",
+    "description": "Football Spy — футбол тақырыбындағы партиялық тыңшы ойыны. Телефонды беріңіз, құпия рөлдерді үлестіріңіз, тыңшыларды табыңыз. Тіркелгі қажет емес. Football Dle де бар — күнделікті Wordle стиліндегі сынақ: Wikidata атрибуттары бойынша футболшыны табыңыз (бұл режимге интернет керек).",
+    "featuresTitle": "Қолданба не істейді",
     "features": [
-      "Рөл үлестіру, таймер, тілдер және жеке жинақтар",
-      "Классикалық тыңшы режимі және Football Dle",
-      "Аудитория: 13+ (Designed for Families емес)"
+      "Рөл үлестіру (тыңшылар / бейбіт) және таймер",
+      "Кіріктірілген футболшы мен бапкер жинақтары + жеке жинақтар (тек құрылғыда)",
+      "Көп UI тілдері",
+      "Football Dle: үш деңгей (stars / known / deep), атрибут салыстыру, деңгейге бір күн/кезең; rewarded арқылы қосымша раунд (Android)",
+      "Басқа ойынымыз Sabotage кросс-промосы → Google Play",
+      "Play аудиториясы: листингтегідей (Designed for Families емес / 13-тен төмен емес)"
     ],
     "adsTitle": "Жарнама және монетизация",
     "ads": [
-      "AdMob және үшінші тарап желілері жоқ",
-      "Play-де «Жарнама бар» = Sabotage кросс-промосы",
-      "Advertising ID жарнама үшін пайдаланылмайды",
-      "Қолданбаішілік сатып алу жоқ"
+      "Жарнама: Android-те иә — Yandex Mobile Ads (AdMob емес)",
+      "Football Dle пішімдері: feed (ережелер; тарих), native (әрекет тізімі), rewarded (көргеннен кейін қосымша раунд)",
+      "Қосымша: Sabotage промо картасы (Yandex емес)",
+      "IAP: жоқ",
+      "Advertising ID: көрсету / өлшеу үшін Yandex SDK пайдаланады"
     ],
     "dataTitle": "Деректер және құпиялылық",
     "data": [
-      "Параметрлер мен жинақтар құрылғыда қалады",
-      "Firebase Analytics (анонимді оқиғалар; жеке мәтін жіберілмейді)",
-      "Аты, email, телефон, фото, нақты орналасу, контактілер немесе төлемдерді жинамаймыз"
+      "Жергілікті: параметрлер, жеке жинақтар, тіл, Football Dle прогресі, Wikidata кэші",
+      "Firebase Firestore: кіріктірілген ат тізімдерін тек оқу",
+      "Firebase Analytics: анонимді оқиғалар (жеке мәтін жіберілмейді)",
+      "Wikidata: Football Dle үшін жария ойыншы атрибуттары",
+      "Yandex Ads (Android): Advertising ID және техникалық SDK деректері",
+      "Өзіміз аты, email, телефон, фото, GPS, контактілер немесе төлемдерді жинамаймыз",
+      "Firestore, Analytics, Football Dle (Wikidata) және жарнама үшін интернет керек; кэштелген жинақтармен негізгі тыңшы офлайн жұмыс істей алады"
     ],
-    "supportText": "Сұрақтар, құпиялылық немесе дүкен мәселелері:"
+    "supportText": "Сұрақтар, жарнама шағымдары, құпиялылық немесе дүкен мәселелері:"
   },
   "sabotage": {
     "name": "Sabotage",
@@ -91,40 +99,44 @@ export default {
   },
   "privacy": {
     "title": "Құпиялылық саясаты",
-    "lastUpdated": "Соңғы жаңарту: 22 қыркүйек 2026 ж.",
+    "lastUpdated": "Соңғы жаңарту: 24 қыркүйек 2026 ж.",
     "introTitle": "1. Оператор",
     "intro": "Бұл саясат SalCR («біз») Football Spy (com.spyfootball) және Sabotage (com.sabotage) ақпаратын қалай өңдейтінін сипаттайды. Байланыс: {email}.",
     "appsTitle": "2. Қамтылған қолданбалар",
     "spyBlockTitle": "Football Spy",
-    "spySummary": "Офлайн партиялық ойын. Firebase Analytics анонимді пайдалану деректерін жинауы мүмкін. AdMob жоқ. «Жарнама бар» = Sabotage кросс-промосы. Advertising ID жарнама желілері үшін пайдаланылмайды. Толық саясат:",
+    "spySummary": "Партиялық тыңшы + Football Dle (Wikidata атрибуттары). Firebase Analytics және Firestore (оқу). Android-те: Yandex Mobile Ads (feed / native / rewarded) және Advertising ID. Sabotage кросс-промосы Yandex-тен бөлек. IAP жоқ. Толық саясат:",
     "sabBlockTitle": "Sabotage",
     "sabSummary": "Офлайн әлеуметтік дедукция. Firebase Analytics және Yandex Mobile Ads. Yandex Advertising ID өңдеуі мүмкін. IAP жоқ. Толық саясат:",
     "collectTitle": "3. Не өңделеді",
     "collect": [
       "Жергілікті параметрлер және жеке мазмұн",
       "Жеке мәтінсіз Firebase Analytics оқиғалары",
-      "Тек Sabotage: Advertising ID қоса Yandex Ads деректері"
+      "Football Spy: Firestore-та кіріктірілген тізімдерді оқу; Football Dle үшін Wikidata жария атрибуттары",
+      "Екі қолданба (Android): Advertising ID қоса Yandex Ads деректері"
     ],
     "notCollectTitle": "4. Өзіміз жинамайтынымыз",
     "notCollect": [
       "Аты, email, телефон",
       "Фото, бейне, аудио",
-      "Нақты орналасу, контактілер, төлемдер, әлеуметтік есептік жазбалар"
+      "GPS / нақты орналасу, контактілер, төлемдер, әлеуметтік есептік жазбалар"
     ],
     "purposeTitle": "5. Мақсаттар",
     "purpose": [
       "Ойындарды іске қосу және баптауларды сақтау",
+      "Football Dle мазмұнын (Wikidata) және тізімдерді (Firestore) жүктеу",
       "Анонимді аналитика арқылы жақсарту",
-      "Sabotage-те жарнама көрсету және өлшеу (Yandex)",
+      "Yandex арқылы жарнама көрсету және өлшеу (Android)",
+      "Өз қолданбаларымызды кросс-промо ету (жарнама желісі емес)",
       "Дүкен және заң талаптарын орындау"
     ],
     "thirdTitle": "6. Үшінші тараптар",
     "third": [
-      "Google Firebase (Analytics) — екі қолданба",
-      "Yandex Mobile Ads — тек Sabotage"
+      "Google Firebase (Analytics; Football Spy Firestore оқу да) — екі қолданба",
+      "Yandex Mobile Ads — Football Spy және Sabotage (Android)",
+      "Wikimedia / Wikidata — тек Football Spy (Football Dle)"
     ],
     "rightsTitle": "7. Сіздің құқықтарыңыз",
-    "rights": "Сұрақтар немесе қарсылық: {email}. Жою жергілікті деректерді өшіреді; жинақталған аналитиканы құрылғы бойынша әрдайым өшіру мүмкін емес. SDK (Google, Yandex) өз саясаттарына ие.",
+    "rights": "Сұрақтар немесе қарсылық: {email}. Жою жергілікті деректерді өшіреді; жинақталған аналитиканы құрылғы бойынша әрдайым өшіру мүмкін емес. SDK (Google, Yandex) және Wikidata өз саясаттарына ие.",
     "childrenTitle": "8. Балалар",
     "children": "Қолданбалар Designed for Families емес және 13 жасқа толмаған балаларға арналмаған.",
     "changesTitle": "9. Өзгерістер",

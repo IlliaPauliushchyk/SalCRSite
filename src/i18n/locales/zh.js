@@ -29,34 +29,42 @@ export default {
     "tagline": "我发布离线聚会游戏——足球间谍与社交推理。",
     "appsHeading": "应用",
     "footballSpyName": "Football Spy",
-    "footballSpyOneLiner": "带足球元素的聚会间谍游戏",
+    "footballSpyOneLiner": "带足球元素的聚会间谍游戏 — 另有 Football Dle",
     "sabotageName": "Sabotage",
     "sabotageOneLiner": "分配角色、完成任务、找出破坏者"
   },
   "spy": {
     "name": "Football Spy",
     "nameLocal": "足球间谍",
-    "description": "足球主题聚会间谍游戏。经典间谍与 Football Dle。离线游玩，无需账号。",
-    "featuresTitle": "功能",
+    "description": "Football Spy 是足球主题聚会间谍游戏。传递手机、分配秘密角色并找出间谍。无需账号。另含 Football Dle——每日 Wordle 式挑战：通过 Wikidata 属性猜足球运动员（该模式需要联网）。",
+    "featuresTitle": "应用功能",
     "features": [
-      "角色分配、计时器、语言与自定义词库",
-      "经典间谍模式与 Football Dle",
-      "受众：13+（非 Designed for Families）"
+      "角色分配（间谍 / 平民）与回合计时",
+      "内置球员与教练词库 + 自定义词库（仅存设备）",
+      "多种界面语言",
+      "Football Dle：三档难度（stars / known / deep）、属性对比、每档一天/周期；可选激励视频额外一轮（Android）",
+      "交叉推广我们的另一款游戏 Sabotage → Google Play",
+      "Play 受众：与商店一致（非 Designed for Families / 非未满 13）"
     ],
     "adsTitle": "广告与变现",
     "ads": [
-      "无 AdMob 或第三方广告网络",
-      "Play 中「含广告」指 Sabotage 交叉推广",
-      "不将 Advertising ID 用于广告",
-      "无应用内购买"
+      "广告：Android 上有 — Yandex Mobile Ads（非 AdMob）",
+      "Football Dle 形式：feed（规则；尝试记录）、native（尝试列表）、rewarded（观看后额外一轮）",
+      "另有：Sabotage 推广卡片（非 Yandex）",
+      "IAP：无",
+      "Advertising ID：由 Yandex SDK 用于展示/衡量广告"
     ],
     "dataTitle": "数据与隐私",
     "data": [
-      "设置与自定义内容保存在设备上",
-      "Firebase Analytics（匿名事件；不发送自定义文本）",
-      "我们不收集姓名、邮箱、电话、照片、精确位置、通讯录或支付信息"
+      "本地：设置、自定义词库、语言、Football Dle 进度、Wikidata 缓存",
+      "Firebase Firestore：只读内置名单（不写入用户自定义）",
+      "Firebase Analytics：匿名使用事件（不发送自定义文本）",
+      "Wikidata：Football Dle 的公开球员属性",
+      "Yandex Ads（Android）：Advertising ID 与技术 SDK 数据",
+      "我们自身不收集姓名、邮箱、电话、照片、GPS、通讯录或支付信息",
+      "Firestore、Analytics、Football Dle（Wikidata）和广告需要联网；带缓存词库的基础间谍模式可离线"
     ],
-    "supportText": "问题、隐私或商店事宜："
+    "supportText": "问题、广告投诉、隐私或商店事宜："
   },
   "sabotage": {
     "name": "Sabotage",
@@ -91,40 +99,44 @@ export default {
   },
   "privacy": {
     "title": "隐私政策",
-    "lastUpdated": "最近更新：2026年9月22日",
+    "lastUpdated": "最近更新：2026年9月24日",
     "introTitle": "1. 运营者",
     "intro": "本政策说明 SalCR（“我们”）如何处理 Football Spy（com.spyfootball）与 Sabotage（com.sabotage）的信息。联系：{email}。",
     "appsTitle": "2. 涵盖应用",
     "spyBlockTitle": "Football Spy",
-    "spySummary": "离线聚会游戏。Firebase Analytics 可能收集匿名使用数据。无 AdMob。「含广告」指 Sabotage 交叉推广。Advertising ID 不用于广告网络。完整政策：",
+    "spySummary": "聚会间谍 + Football Dle（Wikidata 属性）。Firebase Analytics 与 Firestore（只读）。Android：Yandex Mobile Ads（feed / native / rewarded）与 Advertising ID。Sabotage 交叉推广独立于 Yandex。无 IAP。完整政策：",
     "sabBlockTitle": "Sabotage",
     "sabSummary": "离线社交推理。Firebase Analytics 与 Yandex Mobile Ads。Yandex 可能处理 Advertising ID。无 IAP。完整政策：",
     "collectTitle": "3. 处理内容",
     "collect": [
       "设备上的本地设置与自定义内容",
       "不含自定义文本的 Firebase Analytics 事件",
-      "仅 Sabotage：含 Advertising ID 的 Yandex Ads 数据"
+      "Football Spy：Firestore 只读内置名单；Football Dle 的 Wikidata 公开属性",
+      "两款应用（Android）：含 Advertising ID 的 Yandex Ads 数据"
     ],
     "notCollectTitle": "4. 我们自身不收集",
     "notCollect": [
       "姓名、邮箱、电话",
       "照片、视频、音频",
-      "精确位置、通讯录、支付、社交账号"
+      "GPS / 精确位置、通讯录、支付、社交账号"
     ],
     "purposeTitle": "5. 目的",
     "purpose": [
       "运行游戏并保存偏好",
+      "加载 Football Dle（Wikidata）与内置名单（Firestore）",
       "通过匿名分析改进应用",
-      "在 Sabotage 中展示并衡量广告（Yandex）",
+      "通过 Yandex 展示并衡量广告（Android）",
+      "交叉推广自有应用（非广告网络）",
       "遵守商店与法律要求"
     ],
     "thirdTitle": "6. 第三方",
     "third": [
-      "Google Firebase（Analytics）——两款应用",
-      "Yandex Mobile Ads——仅 Sabotage"
+      "Google Firebase（Analytics；Football Spy 另有 Firestore 读取）——两款应用",
+      "Yandex Mobile Ads——Football Spy 与 Sabotage（Android）",
+      "Wikimedia / Wikidata——仅 Football Spy（Football Dle）"
     ],
     "rightsTitle": "7. 您的权利",
-    "rights": "提问或反对处理：{email}。卸载会删除本地数据；聚合分析未必可按设备删除。SDK（Google、Yandex）按其政策处理数据。",
+    "rights": "提问或反对处理：{email}。卸载会删除本地数据；聚合分析未必可按设备删除。SDK（Google、Yandex）与 Wikidata 按其政策处理数据。",
     "childrenTitle": "8. 儿童",
     "children": "应用非 Designed for Families，且不以 13 岁以下儿童为目标。",
     "changesTitle": "9. 变更",

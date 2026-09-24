@@ -29,34 +29,42 @@ export default {
     "tagline": "أنشر ألعاب حفلات دون اتصال — جاسوس كرة قدم واستنتاج اجتماعي.",
     "appsHeading": "التطبيقات",
     "footballSpyName": "Football Spy",
-    "footballSpyOneLiner": "لعبة جاسوس جماعية بطابع كرة القدم",
+    "footballSpyOneLiner": "لعبة جاسوس جماعية بطابع كرة القدم — مع Football Dle",
     "sabotageName": "Sabotage",
     "sabotageOneLiner": "وزّع الأدوار، أكمل المهمة، اعثر على المخرب"
   },
   "spy": {
     "name": "Football Spy",
     "nameLocal": "جاسوس كرة القدم",
-    "description": "لعبة جاسوس جماعية بموضوع كرة القدم. الوضع الكلاسيكي وFootball Dle. دون اتصال ودون حساب.",
-    "featuresTitle": "الميزات",
+    "description": "Football Spy لعبة جاسوس جماعية بموضوع كرة القدم. مرّر الهاتف، وزّع أدوارًا سرية، وابحث عن الجواسيس. بلا حساب. يتضمن أيضًا Football Dle — تحدٍ يومي بأسلوب Wordle: خمّن اللاعب عبر سمات Wikidata (الإنترنت مطلوب لهذا الوضع).",
+    "featuresTitle": "ماذا يفعل التطبيق",
     "features": [
-      "توزيع الأدوار والمؤقت واللغات والمجموعات المخصصة",
-      "وضع الجاسوس الكلاسيكي وFootball Dle",
-      "الجمهور: 13+ (ليست Designed for Families)"
+      "توزيع الأدوار (جواسيس / مدنيون) ومؤقت الجولة",
+      "مجموعات لاعبين ومدربين مدمجة + مجموعات مخصصة (على الجهاز فقط)",
+      "لغات واجهة متعددة",
+      "Football Dle: ثلاثة مستويات (stars / known / deep)، مقارنة السمات، يوم/فترة لكل مستوى؛ جولة إضافية اختيارية عبر rewarded (Android)",
+      "ترويج متبادل للعبتنا Sabotage → Google Play",
+      "جمهور Play: كما في البطاقة (ليست Designed for Families / ليس دون 13)"
     ],
     "adsTitle": "الإعلانات والربح",
     "ads": [
-      "لا AdMob ولا شبكات إعلانية خارجية",
-      "«يحتوي على إعلانات» في Play = ترويج متبادل لـ Sabotage",
-      "لا يُستخدم Advertising ID للإعلانات",
-      "لا مشتريات داخل التطبيق"
+      "إعلانات: نعم على Android — Yandex Mobile Ads (ليست AdMob)",
+      "صيغ Football Dle: feed (قواعد؛ سجل المحاولات)، native (قائمة المحاولات)، rewarded (جولة إضافية بعد المشاهدة)",
+      "أيضًا: بطاقة ترويج Sabotage (ليست Yandex)",
+      "IAP: لا",
+      "Advertising ID: يستخدمه SDK ياندكس للعرض / القياس"
     ],
     "dataTitle": "البيانات والخصوصية",
     "data": [
-      "الإعدادات والمجموعات تبقى على الجهاز",
-      "Firebase Analytics (أحداث مجهولة؛ لا يُرسل نص المجموعات المخصصة)",
-      "لا نجمع الاسم أو البريد أو الهاتف أو الصور أو الموقع الدقيق أو جهات الاتصال أو المدفوعات"
+      "محليًا: الإعدادات والمجموعات المخصصة واللغة وتقدم Football Dle وذاكرة Wikidata",
+      "Firebase Firestore: قراءة قوائم الأسماء المدمجة فقط",
+      "Firebase Analytics: أحداث مجهولة (لا يُرسل نص المجموعات المخصصة)",
+      "Wikidata: سمات اللاعبين العامة لـ Football Dle",
+      "Yandex Ads (Android): Advertising ID وبيانات تقنية لـ SDK",
+      "لا نجمع بأنفسنا الاسم أو البريد أو الهاتف أو الصور أو GPS أو جهات الاتصال أو المدفوعات",
+      "الإنترنت مطلوب لـ Firestore وAnalytics وFootball Dle (Wikidata) والإعلانات؛ وضع الجاسوس الأساسي مع مجموعات مخزّنة قد يعمل دون اتصال"
     ],
-    "supportText": "أسئلة أو خصوصية أو مشاكل المتجر:"
+    "supportText": "أسئلة أو شكاوى إعلانات أو خصوصية أو مشاكل المتجر:"
   },
   "sabotage": {
     "name": "Sabotage",
@@ -91,40 +99,44 @@ export default {
   },
   "privacy": {
     "title": "سياسة الخصوصية",
-    "lastUpdated": "آخر تحديث: 22 سبتمبر 2026",
+    "lastUpdated": "آخر تحديث: 24 سبتمبر 2026",
     "introTitle": "1. المسؤول",
     "intro": "تصف هذه السياسة كيف تعالج SalCR («نحن») معلومات Football Spy (com.spyfootball) وSabotage (com.sabotage). التواصل: {email}.",
     "appsTitle": "2. التطبيقات المشمولة",
     "spyBlockTitle": "Football Spy",
-    "spySummary": "لعبة دون اتصال. قد يجمع Firebase Analytics بيانات استخدام مجهولة. بلا AdMob. «يحتوي على إعلانات» = ترويج متبادل لـ Sabotage. Advertising ID غير مستخدم لشبكات الإعلانات. السياسة الكاملة:",
+    "spySummary": "لعبة جاسوس + Football Dle (سمات Wikidata). Firebase Analytics وFirestore (قراءة). على Android: Yandex Mobile Ads (feed / native / rewarded) وAdvertising ID. الترويج المتبادل لـ Sabotage منفصل عن Yandex. بلا IAP. السياسة الكاملة:",
     "sabBlockTitle": "Sabotage",
     "sabSummary": "استنتاج اجتماعي دون اتصال. Firebase Analytics وYandex Mobile Ads. قد يعالج ياندكس Advertising ID. بلا IAP. السياسة الكاملة:",
     "collectTitle": "3. ما يُعالَج",
     "collect": [
       "إعدادات اللعبة والمحتوى المخصص محليًا",
       "أحداث Firebase Analytics دون نص مخصص",
-      "Sabotage فقط: بيانات Yandex Ads بما فيها Advertising ID"
+      "Football Spy: قراءة Firestore للقوائم المدمجة؛ سمات Wikidata العامة لـ Football Dle",
+      "كلا التطبيقين (Android): بيانات Yandex Ads بما فيها Advertising ID"
     ],
     "notCollectTitle": "4. ما لا نجمعه بأنفسنا",
     "notCollect": [
       "الاسم والبريد والهاتف",
       "الصور والفيديو والصوت",
-      "الموقع الدقيق وجهات الاتصال والمدفوعات وحسابات التواصل"
+      "GPS / الموقع الدقيق وجهات الاتصال والمدفوعات وحسابات التواصل"
     ],
     "purposeTitle": "5. الأغراض",
     "purpose": [
       "تشغيل الألعاب وحفظ التفضيلات",
-      "تحسين التطبيقات عبر تحليلات مجهولة",
-      "عرض وقياس إعلانات Sabotage (Yandex)",
+      "تحميل محتوى Football Dle (Wikidata) والقوائم (Firestore)",
+      "التحسين عبر تحليلات مجهولة",
+      "عرض وقياس الإعلانات عبر Yandex (Android)",
+      "الترويج المتبادل لتطبيقاتنا (ليست شبكة إعلانات)",
       "الامتثال للمتاجر والقانون"
     ],
     "thirdTitle": "6. أطراف ثالثة",
     "third": [
-      "Google Firebase (Analytics) — كلا التطبيقين",
-      "Yandex Mobile Ads — Sabotage فقط"
+      "Google Firebase (Analytics؛ Football Spy أيضًا قراءة Firestore) — كلا التطبيقين",
+      "Yandex Mobile Ads — Football Spy وSabotage (Android)",
+      "Wikimedia / Wikidata — Football Spy فقط (Football Dle)"
     ],
     "rightsTitle": "7. حقوقك",
-    "rights": "أسئلة أو اعتراض: {email}. إلغاء التثبيت يحذف البيانات المحلية؛ التحليلات المجمعة قد لا تُحذف لكل جهاز. مشغّلو SDK (Google وYandex) لديهم سياساتهم.",
+    "rights": "أسئلة أو اعتراض: {email}. إلغاء التثبيت يحذف البيانات المحلية؛ التحليلات المجمعة قد لا تُحذف لكل جهاز. مشغّلو SDK (Google وYandex) وWikidata لديهم سياساتهم.",
     "childrenTitle": "8. الأطفال",
     "children": "التطبيقات ليست Designed for Families وليست موجهة لمن دون 13 عامًا.",
     "changesTitle": "9. التغييرات",

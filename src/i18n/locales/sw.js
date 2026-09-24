@@ -29,34 +29,42 @@ export default {
     "tagline": "Nachapisha michezo ya sherehe nje ya mtandao — jasusi wa mpira na makisio ya kijamii.",
     "appsHeading": "Programu",
     "footballSpyName": "Football Spy",
-    "footballSpyOneLiner": "Mchezo wa jasusi wa sherehe wenye mpira",
+    "footballSpyOneLiner": "Mchezo wa jasusi wa sherehe wenye mpira — plus Football Dle",
     "sabotageName": "Sabotage",
     "sabotageOneLiner": "Gawa majukumu, kamilisha misheni, mtafute mhujumu"
   },
   "spy": {
     "name": "Football Spy",
     "nameLocal": "Jasusi wa Mpira",
-    "description": "Mchezo wa jasusi wa sherehe wenye mada ya mpira. Hali ya kawaida na Football Dle. Nje ya mtandao, bila akaunti.",
-    "featuresTitle": "Vipengele",
+    "description": "Football Spy ni mchezo wa jasusi wa sherehe wenye mada ya mpira. Pitisha simu, gawa majukumu ya siri, tafuta wajasusi. Hakuna akaunti. Pia kuna Football Dle — changamoto ya kila siku kama Wordle: bahatisha mchezaji kwa sifa za Wikidata (hali hiyo inahitaji intaneti).",
+    "featuresTitle": "Programu inafanya nini",
     "features": [
-      "Ugawaji wa majukumu, kipima muda, lugha na seti maalum",
-      "Hali ya jasusi ya kawaida na Football Dle",
-      "Hadhira: 13+ (sio Designed for Families)"
+      "Ugawaji wa majukumu (wajasusi / raia) na kipima muda",
+      "Seti za wachezaji na makocha zilizojengwa + seti maalum (kwenye kifaa tu)",
+      "Lugha nyingi za UI",
+      "Football Dle: viwango vitatu (stars / known / deep), ulinganifu wa sifa, siku/kipindi kimoja kwa kiwango; raundi ya ziada kupitia rewarded (Android)",
+      "Cross-promo ya mchezo wetu Sabotage → Google Play",
+      "Hadhira ya Play: kama kwenye listing (sio Designed for Families / sio chini ya 13)"
     ],
     "adsTitle": "Matangazo na mapato",
     "ads": [
-      "Hakuna AdMob wala mitandao ya wahusika wengine",
-      "«Ina matangazo» kwenye Play = promo ya Sabotage",
-      "Advertising ID haitumiki kwa matangazo",
-      "Hakuna ununuzi ndani ya programu"
+      "Matangazo: ndiyo kwenye Android — Yandex Mobile Ads (sio AdMob)",
+      "Miundo ya Football Dle: feed (sheria; historia), native (orodha ya majaribio), rewarded (raundi ya ziada baada ya kutazama)",
+      "Pia: kadi ya promo ya Sabotage (sio Yandex)",
+      "IAP: hapana",
+      "Advertising ID: inatumika na SDK ya Yandex kuonyesha / kupima matangazo"
     ],
     "dataTitle": "Data na faragha",
     "data": [
-      "Mipangilio na seti zinabaki kwenye kifaa",
-      "Firebase Analytics (matukio yasiyojulikana; maandishi maalum hayatumwi)",
-      "Hatukusanyi jina, barua pepe, simu, picha, eneo sahihi, anwani au malipo"
+      "Ndani: mipangilio, seti maalum, lugha, maendeleo ya Football Dle, cache ya Wikidata",
+      "Firebase Firestore: kusoma tu orodha za majina zilizojengwa",
+      "Firebase Analytics: matukio yasiyojulikana (maandishi maalum hayatumwi)",
+      "Wikidata: sifa za wachezaji za umma kwa Football Dle",
+      "Yandex Ads (Android): Advertising ID na data ya kiufundi ya SDK",
+      "Sisi wenyewe hatukusanyi jina, barua pepe, simu, picha, GPS, anwani au malipo",
+      "Intaneti inahitajika kwa Firestore, Analytics, Football Dle (Wikidata) na matangazo; jasusi wa msingi wenye seti zilizohifadhiwa anaweza kufanya kazi nje ya mtandao"
     ],
-    "supportText": "Maswali, faragha au matatizo ya duka:"
+    "supportText": "Maswali, malalamiko ya matangazo, faragha au matatizo ya duka:"
   },
   "sabotage": {
     "name": "Sabotage",
@@ -91,40 +99,44 @@ export default {
   },
   "privacy": {
     "title": "Sera ya faragha",
-    "lastUpdated": "Ilisasishwa mwisho: 22 Septemba 2026",
+    "lastUpdated": "Ilisasishwa mwisho: 24 Septemba 2026",
     "introTitle": "1. Opereta",
     "intro": "Sera hii inaeleza jinsi SalCR («sisi») inavyoshughulikia taarifa za Football Spy (com.spyfootball) na Sabotage (com.sabotage). Mawasiliano: {email}.",
     "appsTitle": "2. Programu zinazohusika",
     "spyBlockTitle": "Football Spy",
-    "spySummary": "Mchezo nje ya mtandao. Firebase Analytics inaweza kukusanya data ya matumizi yasiyojulikana. Hakuna AdMob. «Ina matangazo» = promo ya Sabotage. Advertising ID haitumiki kwa mitandao ya matangazo. Sera kamili:",
+    "spySummary": "Jasusi wa sherehe + Football Dle (sifa za Wikidata). Firebase Analytics na Firestore (kusoma). Kwenye Android: Yandex Mobile Ads (feed / native / rewarded) na Advertising ID. Cross-promo ya Sabotage ni tofauti na Yandex. Hakuna IAP. Sera kamili:",
     "sabBlockTitle": "Sabotage",
     "sabSummary": "Makisio ya kijamii nje ya mtandao. Firebase Analytics na Yandex Mobile Ads. Yandex inaweza kuchakata Advertising ID. Hakuna IAP. Sera kamili:",
     "collectTitle": "3. Kinachochakatwa",
     "collect": [
       "Mipangilio ya ndani na maudhui maalum",
       "Matukio ya Firebase Analytics bila maandishi maalum",
-      "Sabotage pekee: data ya Yandex Ads ikiwa ni pamoja na Advertising ID"
+      "Football Spy: kusoma Firestore orodha zilizojengwa; sifa za umma za Wikidata kwa Football Dle",
+      "Programu zote mbili (Android): data ya Yandex Ads ikiwa ni pamoja na Advertising ID"
     ],
     "notCollectTitle": "4. Tusivyokusanya wenyewe",
     "notCollect": [
       "Jina, barua pepe, simu",
       "Picha, video, sauti",
-      "Eneo sahihi, anwani, malipo, akaunti za kijamii"
+      "GPS / eneo sahihi, anwani, malipo, akaunti za kijamii"
     ],
     "purposeTitle": "5. Madhumuni",
     "purpose": [
       "Kuendesha michezo na kuhifadhi mapendeleo",
-      "Kuboresha programu kupitia uchanganuzi usiojulikana",
-      "Kuonyesha na kupima matangazo katika Sabotage (Yandex)",
+      "Kupakia maudhui ya Football Dle (Wikidata) na orodha (Firestore)",
+      "Kuboresha kupitia uchanganuzi usiojulikana",
+      "Kuonyesha na kupima matangazo kupitia Yandex (Android)",
+      "Kukuza programu zetu wenyewe (sio mtandao wa matangazo)",
       "Kutii mahitaji ya maduka na sheria"
     ],
     "thirdTitle": "6. Wahusika wengine",
     "third": [
-      "Google Firebase (Analytics) — programu zote mbili",
-      "Yandex Mobile Ads — Sabotage pekee"
+      "Google Firebase (Analytics; Football Spy pia kusoma Firestore) — programu zote mbili",
+      "Yandex Mobile Ads — Football Spy na Sabotage (Android)",
+      "Wikimedia / Wikidata — Football Spy pekee (Football Dle)"
     ],
     "rightsTitle": "7. Haki zako",
-    "rights": "Maswali au pingamizi: {email}. Kuondoa programu hufuta data ya ndani; uchanganuzi wa jumla hauwezi kufutwa kila wakati kwa kifaa. SDK (Google, Yandex) zina sera zao.",
+    "rights": "Maswali au pingamizi: {email}. Kuondoa programu hufuta data ya ndani; uchanganuzi wa jumla hauwezi kufutwa kila wakati kwa kifaa. SDK (Google, Yandex) na Wikidata zina sera zao.",
     "childrenTitle": "8. Watoto",
     "children": "Programu si Designed for Families wala hazielekezwi kwa watoto chini ya miaka 13.",
     "changesTitle": "9. Mabadiliko",

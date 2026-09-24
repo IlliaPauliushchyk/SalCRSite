@@ -29,34 +29,42 @@ export default {
     "tagline": "Çevrimdışı parti oyunları yayınlıyorum — futbol casusu ve sosyal çıkarım.",
     "appsHeading": "Uygulamalar",
     "footballSpyName": "Football Spy",
-    "footballSpyOneLiner": "Futbol temalı parti casus oyunu",
+    "footballSpyOneLiner": "Futbol temalı parti casus oyunu — artı Football Dle",
     "sabotageName": "Sabotage",
     "sabotageOneLiner": "Rolleri dağıt, görevi tamamla, sabotajcıyı bul"
   },
   "spy": {
     "name": "Football Spy",
     "nameLocal": "Futbol Casusu",
-    "description": "Futbol temalı parti casus oyunu. Klasik casus ve Football Dle. Çevrimdışı, hesap yok.",
-    "featuresTitle": "Özellikler",
+    "description": "Football Spy futbol temalı bir parti casus oyunudur. Telefonu geçirin, gizli roller dağıtın, casusları bulun. Hesap gerekmez. Ayrıca Football Dle var — günlük Wordle tarzı meydan okuma: Wikidata öznitelikleriyle futbolcuyu tahmin edin (bu mod için internet gerekir).",
+    "featuresTitle": "Uygulama ne yapar",
     "features": [
-      "Rol dağıtımı, zamanlayıcı, diller ve özel setler",
-      "Klasik casus modu ve Football Dle",
-      "Kitle: 13+ (Designed for Families değil)"
+      "Rol dağıtımı (casuslar / siviller) ve tur zamanlayıcısı",
+      "Yerleşik futbolcu ve antrenör setleri + özel setler (yalnızca cihazda)",
+      "Çok sayıda arayüz dili",
+      "Football Dle: üç zorluk (stars / known / deep), öznitelik karşılaştırması, seviye başına bir gün/dönem; rewarded ile isteğe bağlı ekstra tur (Android)",
+      "Diğer oyunumuz Sabotage’ın çapraz tanıtımı → Google Play",
+      "Play kitlesi: listing’deki gibi (Designed for Families değil / 13 altı değil)"
     ],
     "adsTitle": "Reklam ve gelir",
     "ads": [
-      "AdMob veya üçüncü taraf ağ yok",
-      "Play’de «Reklam içerir» = Sabotage çapraz tanıtımı",
-      "Advertising ID reklam için kullanılmaz",
-      "Uygulama içi satın alma yok"
+      "Reklam: Android’de evet — Yandex Mobile Ads (AdMob değil)",
+      "Football Dle biçimleri: feed (kurallar; geçmiş), native (deneme listesi), rewarded (izledikten sonra ekstra tur)",
+      "Ayrıca: Sabotage promo kartı (Yandex değil)",
+      "IAP: yok",
+      "Advertising ID: gösterim / ölçüm için Yandex SDK kullanır"
     ],
     "dataTitle": "Veri ve gizlilik",
     "data": [
-      "Ayarlar ve setler cihazda kalır",
-      "Firebase Analytics (anonim olaylar; özel metin gönderilmez)",
-      "Ad, e-posta, telefon, fotoğraf, kesin konum, kişi veya ödeme toplamayız"
+      "Yerel: ayarlar, özel setler, dil, Football Dle ilerlemesi, Wikidata önbelleği",
+      "Firebase Firestore: yerleşik isim listelerinin salt okunması",
+      "Firebase Analytics: anonim olaylar (özel set metni gönderilmez)",
+      "Wikidata: Football Dle için herkese açık oyuncu öznitelikleri",
+      "Yandex Ads (Android): Advertising ID ve teknik SDK verisi",
+      "Kendimiz ad, e-posta, telefon, fotoğraf, GPS, kişi veya ödeme toplamayız",
+      "Firestore, Analytics, Football Dle (Wikidata) ve reklam için internet gerekir; önbellekli setlerle temel casus çevrimdışı çalışabilir"
     ],
-    "supportText": "Sorular, gizlilik veya mağaza sorunları:"
+    "supportText": "Sorular, reklam şikayetleri, gizlilik veya mağaza sorunları:"
   },
   "sabotage": {
     "name": "Sabotage",
@@ -91,40 +99,44 @@ export default {
   },
   "privacy": {
     "title": "Gizlilik politikası",
-    "lastUpdated": "Son güncelleme: 22 Eylül 2026",
+    "lastUpdated": "Son güncelleme: 24 Eylül 2026",
     "introTitle": "1. İşletmeci",
-    "intro": "Bu politika SalCR’nın («biz») Football Spy (com.spyfootball) ve Sabotage (com.sabotage) için bilgileri nasıl işlediğini açıklar. İletişim: {email}.",
+    "intro": "Bu politika SalCR’nin («biz») Football Spy (com.spyfootball) ve Sabotage (com.sabotage) için bilgileri nasıl işlediğini açıklar. İletişim: {email}.",
     "appsTitle": "2. Uygulamalar",
     "spyBlockTitle": "Football Spy",
-    "spySummary": "Çevrimdışı oyun. Firebase Analytics anonim kullanım toplayabilir. AdMob yok. «Reklam içerir» = Sabotage çapraz tanıtımı. Advertising ID reklam ağları için kullanılmaz. Tam politika:",
+    "spySummary": "Casus parti oyunu + Football Dle (Wikidata öznitelikleri). Firebase Analytics ve Firestore (okuma). Android’de: Yandex Mobile Ads (feed / native / rewarded) ve Advertising ID. Sabotage çapraz tanıtımı Yandex’ten ayrı. IAP yok. Tam politika:",
     "sabBlockTitle": "Sabotage",
     "sabSummary": "Çevrimdışı sosyal çıkarım. Firebase Analytics ve Yandex Mobile Ads. Yandex Advertising ID işleyebilir. IAP yok. Tam politika:",
     "collectTitle": "3. İşlenenler",
     "collect": [
       "Yerel ayarlar ve özel içerik",
       "Özel metinsiz Firebase Analytics olayları",
-      "Yalnızca Sabotage: Advertising ID dahil Yandex Ads verisi"
+      "Football Spy: Firestore’da yerleşik listelerin okunması; Football Dle için Wikidata öznitelikleri",
+      "Her iki uygulama (Android): Advertising ID dahil Yandex Ads verisi"
     ],
     "notCollectTitle": "4. Kendimiz toplamadıklarımız",
     "notCollect": [
       "Ad, e-posta, telefon",
       "Fotoğraf, video, ses",
-      "Kesin konum, kişiler, ödemeler, sosyal hesaplar"
+      "GPS / kesin konum, kişiler, ödemeler, sosyal hesaplar"
     ],
     "purposeTitle": "5. Amaçlar",
     "purpose": [
       "Oyunları çalıştırmak ve tercihleri saklamak",
+      "Football Dle içeriği (Wikidata) ve listeleri (Firestore) yüklemek",
       "Anonim analitikle iyileştirmek",
-      "Sabotage’ta reklam göstermek ve ölçmek (Yandex)",
+      "Yandex ile reklam göstermek ve ölçmek (Android)",
+      "Kendi uygulamalarımızı tanıtmak (reklam ağı değil)",
       "Mağaza ve yasal gerekliliklere uymak"
     ],
     "thirdTitle": "6. Üçüncü taraflar",
     "third": [
-      "Google Firebase (Analytics) — her iki uygulama",
-      "Yandex Mobile Ads — yalnızca Sabotage"
+      "Google Firebase (Analytics; Football Spy ayrıca Firestore okuma) — her iki uygulama",
+      "Yandex Mobile Ads — Football Spy ve Sabotage (Android)",
+      "Wikimedia / Wikidata — yalnızca Football Spy (Football Dle)"
     ],
     "rightsTitle": "7. Haklarınız",
-    "rights": "Sorular veya itiraz: {email}. Kaldırma yerel veriyi siler; toplu analitik her zaman cihaz bazında silinemez. SDK’lar (Google, Yandex) kendi politikalarına sahiptir.",
+    "rights": "Sorular veya itiraz: {email}. Kaldırma yerel veriyi siler; toplu analitik her zaman cihaz bazında silinemez. SDK’lar (Google, Yandex) ve Wikidata kendi politikalarına sahiptir.",
     "childrenTitle": "8. Çocuklar",
     "children": "Uygulamalar Designed for Families değildir ve 13 yaş altı çocuklara yönelik değildir.",
     "changesTitle": "9. Değişiklikler",
